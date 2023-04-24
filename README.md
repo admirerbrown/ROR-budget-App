@@ -183,4 +183,4 @@ If you like this project then don't forget to give a star star on this repositor
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/admirerbrown/Rails-Blog_App/blob/develop/LICENCE.md) licensed.
+This project is [MIT](https://github.com/admirerbrown/ROR-budget-App/blob/develop/LICENSE.md) licensed.
