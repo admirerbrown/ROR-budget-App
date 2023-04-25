@@ -1,0 +1,2 @@
+module SplashscreenHelper
+end

@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.2'
+ruby '3.2.0'
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'pg'
@@ -73,3 +73,4 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+gem 'devise'
