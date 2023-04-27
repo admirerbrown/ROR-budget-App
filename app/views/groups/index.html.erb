@@ -1,0 +1,39 @@
+<section>
+  <div>
+    <div class="nav">
+      <h1>CATEGORIES</h1>
+    </div>
+    <hr>
+    <div class="d-flex">
+      <%= link_to "",class: "text-decoration-none" do %>
+        <p>Most recent</p>
+      <% end %>
+      <%= link_to "",class: "text-decoration-none" do %>
+        <p>Most ancient</p>
+      <% end %>
+    </div>
+  </div>
+  <div class="categories">
+    <% if @categories.length == 0 %>
+      <p>nothing to show add some!</p>
+    <% else %>
+      <% @categories.each do |category| %>
+        <div class="d-flex border">
+          <div class="icon-div rounded">
+            <img class="icon" src="<%= category.icon %>" alt="">
+          </div>
+          <%= link_to "/categories/#{category.id}",class: "text-decoration-none" do %>
+            <h6><%= category.name %></h6>
+          <% end %>
+            <h6><%= "Total: #{number_to_currency(category.total_expenses)}" %></h6>
+        </div>
+        <br>
+      <% end %>
+    <% end %>
+  </div>
+  <footer class="footer fixed-bottom cat ">
+    <%= link_to new_group_path, class: "btn btn-primary text-decoration-none" do %>
+      Add new category
+    <% end %>
+  </footer>
+</section>

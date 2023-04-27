@@ -1,0 +1,31 @@
+<section>
+  <div>
+    <div class="nav">
+    <%= link_to '/categories', class: 'text-light h1' do %>
+        <i class="bi bi-arrow-left"></i>
+    <% end %>
+
+      <h1>TRANSACTIONS</h1>
+    </div>
+    <hr>
+  </div>
+  <h3><%= "Total Amount: #{number_to_currency(@group_expenses.sum(:amount))}" %></h3>
+  <div class="expenses">
+    <% if @group_expenses.length == 0 %>
+      <p>nothing to show add some!</p>
+    <% else %>
+      <% @group_expenses.each do |expense| %>
+        <div class="d-flex border">
+          <h6><%= expense.name %></h6>
+          <h6><%= number_to_currency(expense.amount) %></h6>
+        </div>
+        <br>
+      <% end %>
+    <% end %>
+  </div>
+  <footer class="footer fixed-bottom cat ">
+    <%= link_to "/#{@group_id}/new_groups_wallets", class: "btn btn-primary text-decoration-none" do %>
+      Add new expense
+    <% end %>
+  </footer>
+</section>

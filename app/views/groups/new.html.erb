@@ -1,0 +1,22 @@
+<section>
+  <%= form_with model: @category, url: groups_path, local: true, class: "form mx-auto" do |form| %>
+    <div class=" d-flex banner">
+      <%= link_to '/categories', class: 'text-light h1' do %>
+        <i class="bi bi-arrow-left"></i>
+      <% end %>
+      <h2>NEW CATEGORY</h2>
+      <%= form.submit "save", class:"btn btn-primary" %>
+    </div>
+    <div class="content">
+      <div class="col-sm-10 mb-3 mx-auto">
+        <%= form.label :name ,class: "form-label form-label" %></br>
+      <%= form.text_field :name, required: true, class: "form-control", placeholder: " category name" %>
+    </div>
+    <br>
+    <div class="col-sm-10 mb-3 mx-auto">
+      <%= form.label :icon ,class: "form-label form-label" %></br>
+    <%= form.text_field :icon, required: true, class: "form-control", placeholder: "enter image link" %>
+  </div>
+</div>
+<% end %>
+</section>

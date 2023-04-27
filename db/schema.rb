@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_24_210912) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_26_111153) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,11 +23,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_24_210912) do
     t.index ["user_id"], name: "index_groups_on_user_id"
   end
 
-  create_table "groups_wallets", id: false, force: :cascade do |t|
-    t.bigint "wallet_id", null: false
-    t.bigint "group_id", null: false
-    t.index ["group_id"], name: "index_groups_wallets_on_group_id"
-    t.index ["wallet_id"], name: "index_groups_wallets_on_wallet_id"
+  create_table "groups_wallets", force: :cascade do |t|
+    t.integer "wallet_id"
+    t.integer "group_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
