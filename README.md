@@ -34,6 +34,8 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Video Walkthrough ](#-video-walkthrough-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -84,11 +86,15 @@ The application allows the user to:
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+  ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+- [Project Link](https://admirerbrown.github.io/capstone-one/)
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com) -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Video Walkthrough <a name="video-walkthrough"></a>
+- [Watch Here](https://www.loom.com/share/97c76aa9723846319561e7fb57794204)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
