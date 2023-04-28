@@ -10,7 +10,7 @@ get ':id/new_groups_wallets/', to: 'groups_wallets#new'
 resources :groups_wallets, only: [:new, :create], path: 'group_expenses'
 
 
- resources :wallets, only: [:index,  :create, :new], path: 'expenses'
+ resources :wallets, only: [:index], path: 'expenses'
 
 
 end
