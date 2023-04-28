@@ -1,4 +1,5 @@
 class GroupsWalletsController < ApplicationController
+  before_action :authenticate_user!
   def new
     @wallet = Wallet.new
     @groups = current_user.groups

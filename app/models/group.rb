@@ -5,8 +5,7 @@ class Group < ApplicationRecord
   validates :name, presence: true, length: { maximum: 250 }
 
   def total_expenses
-  wallets = self.wallets
-  total = wallets.sum(:amount)
-  return total
+    wallets = self.wallets
+    wallets.sum(:amount)
   end
 end

@@ -1,4 +1,6 @@
 class GroupsController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @categories = Group.where(user_id: current_user)
   end

@@ -1,22 +1,23 @@
 <section>
   <%= form_with model: @category, url: groups_path, local: true, class: "form mx-auto" do |form| %>
-    <div class=" d-flex banner">
+    <div class="d-flex border container justify-content-between align-items-center">
       <%= link_to '/categories', class: 'text-light h1' do %>
         <i class="bi bi-arrow-left"></i>
       <% end %>
-      <h2>NEW CATEGORY</h2>
-      <%= form.submit "save", class:"btn btn-primary" %>
+      <h2 class="text-light"> ADD CATEGORY</h2>
+      <div class="mb-2">
+        <%= form.submit "Save", class: "btn border-0 fs-5 text-light" %>
+      </div>
     </div>
-    <div class="content">
+    <div class="colar">
+      <div class="col-sm-10 mb-3 mx-auto pt-3">
+        <%= form.text_field :name, required: true, class: "btn border-0 fs-8 form-control text-start", placeholder: " category name" %>
+      </div>
+      <hr>
       <div class="col-sm-10 mb-3 mx-auto">
-        <%= form.label :name ,class: "form-label form-label" %></br>
-      <%= form.text_field :name, required: true, class: "form-control", placeholder: " category name" %>
+        <%= form.text_field :icon, required: true, class: "btn border-0 fs-8 form-control text-start", placeholder: "enter image link" %>
+      </div>
+      <hr>
     </div>
-    <br>
-    <div class="col-sm-10 mb-3 mx-auto">
-      <%= form.label :icon ,class: "form-label form-label" %></br>
-    <%= form.text_field :icon, required: true, class: "form-control", placeholder: "enter image link" %>
-  </div>
-</div>
-<% end %>
+  <% end %>
 </section>

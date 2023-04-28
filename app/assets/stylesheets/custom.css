@@ -1,11 +1,11 @@
 .cat {
-    background-color: #f5f5f5;
+    background-color: #60b524;
     padding: 10px;
 }
 
 .icon-div {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border: 1px solid #ccc;
 }
 
@@ -16,5 +16,45 @@
 }
 
 .bi {
-    color: aqua;
+    color: #ffff;
+}
+
+.colar {
+    background-color: #ffff;
+}
+
+.logo {
+    height: 350px;
+    width: 200px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.buc1 {
+    background-color: #336eb2;
+}
+
+.buc2 {
+    background-color: #ffffff;
+}
+
+.tx {
+    color: #434C55;
+}
+
+.container {
+    background-color: #336eb2;
+}
+
+.cat,
+.container {
+    height: 80px;
+}
+
+.pad-r {
+    padding-right: 20px;
 }
