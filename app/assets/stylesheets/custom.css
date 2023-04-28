@@ -1,60 +1,60 @@
 .cat {
-    background-color: #60b524;
-    padding: 10px;
+  background-color: #60b524;
+  padding: 10px;
 }
 
 .icon-div {
-    height: 80px;
-    width: 80px;
-    border: 1px solid #ccc;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #ccc;
 }
 
 .icon-div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .bi {
-    color: #ffff;
+  color: #ffff;
 }
 
 .colar {
-    background-color: #ffff;
+  background-color: #ffff;
 }
 
 .logo {
-    height: 350px;
-    width: 200px;
+  height: 350px;
+  width: 200px;
 }
 
 .logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .buc1 {
-    background-color: #336eb2;
+  background-color: #336eb2;
 }
 
 .buc2 {
-    background-color: #ffffff;
+  background-color: #fff;
 }
 
 .tx {
-    color: #434C55;
+  color: #434c55;
 }
 
 .container {
-    background-color: #336eb2;
+  background-color: #336eb2;
 }
 
 .cat,
 .container {
-    height: 80px;
+  height: 80px;
 }
 
 .pad-r {
-    padding-right: 20px;
+  padding-right: 20px;
 }
