@@ -88,7 +88,7 @@ The application allows the user to:
 
   ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Project Link](https://admirer-olb9.onrender.com)
+- [ See Project Link](https://admirer-olb9.onrender.com)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
