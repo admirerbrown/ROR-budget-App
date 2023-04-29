@@ -1,0 +1,30 @@
+<section>
+  <div>
+    <%= form_with model: @wallet, url: "/groups_wallets", local: true, class: "form mx-auto" do |form| %>
+      <div class="d-flex border container justify-content-between align-items-center">
+        <%= link_to "/categories/#{@back_id}", class: 'text-light h1' do %>
+          <i class="bi bi-arrow-left"></i>
+        <% end %>
+        <h2 class="text-light"> ADD EXPENSE</h2>
+        <div class="mb-2">
+          <%= form.submit "Save", class: "btn border-0 fs-5 text-light" %>
+        </div>
+      </div>
+      <div class="field colar">
+        <div class="col-sm-10 mb-3 mx-auto pt-3">
+          <%= form.text_field :name, required: true, class: "btn border-0 fs-8 form-control text-start",placeholder: "Name" %>
+        </div>
+        <hr>
+        <div class="col-sm-10 mb-3 mx-auto">
+          <%= form.label :Amount, class: "form-label" %>
+          <%= form.text_field :amount, required: true, class: "btn border-0 fs-8 form-control text-start",placeholder: "Enter Amount"%>
+        </div>
+        <hr>
+        <div class="col-sm-5">
+          <%= form.select :group_id, options_for_select(@groups.map { |group| [group.name, group.id] }), { prompt: "Select category" }, { required: true, class: "btn border-0 fs-8 form-control text-start" } %>
+        </div>
+        <hr>
+      </div>
+    <% end %>
+  </div>
+</section>

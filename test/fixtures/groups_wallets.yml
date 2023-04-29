@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  wallets_id: MyString
+  : 1
+  group_id: MyString
+  : 1
+
+two:
+  wallets_id: MyString
+  : 1
+  group_id: MyString
+  : 1
