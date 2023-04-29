@@ -8,4 +8,6 @@ class User < ApplicationRecord
   attr_accessor :unconfirmed_email
 
   validates :name, presence: true, length: { maximum: 250 }
+  validates :email, presence: true
+  validates :password, presence: true
 end

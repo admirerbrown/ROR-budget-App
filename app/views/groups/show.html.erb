@@ -8,7 +8,6 @@
   <div class="d-flex justify-content-between align-items-center container shadow-sm bg-light ">
     <h5>Total Amount:</h5>
     <h5><%= number_to_currency(@group_expenses.sum(:amount)) %></h5>
-  
   </div>
   <div class="expenses m-3">
     <% if @group_expenses.length == 0 %>
@@ -16,8 +15,11 @@
     <% else %>
       <% @group_expenses.each do |expense| %>
         <div class="colar d-flex border p-2 rounded-1 shadow-sm mt-2 justify-content-between align-items-center pt-3">
-          <h6><%= expense.name %></h6>
-          <h6><%= number_to_currency(expense.amount) %></h6>
+          <div class="d-flex flex-column">
+            <h6 class=""><%= expense.name %></h6>
+            <p><%= expense.created_at.strftime('%Y-%m-%d') %></p>
+          </div>
+          <h6 class="mb-5"><%= number_to_currency(expense.amount) %></h6>
         </div>
       <% end %>
     <% end %>

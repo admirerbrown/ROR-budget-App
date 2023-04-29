@@ -36,10 +36,16 @@
         <div class="icon-div rounded ">
           <img class="icon" src="<%= category.icon %>" alt="">
         </div>
+        <div class="mt-4">
         <%= link_to "/categories/#{category.id}",class: "text-decoration-none" do %>
           <h6 class=""><%= category.name %></h6>
         <% end %>
-        <h6 ><%= number_to_currency(category.total_expenses) %></h6>
+        <p><%= category.created_at.strftime('%Y-%m-%d') %></p>
+        </div>
+        <div>
+        <h6 class="mb-4"><%= number_to_currency(category.total_expenses) %></h6>
+
+        </div>
       </div>
     <% end %>
   <% end %>
