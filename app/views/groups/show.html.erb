@@ -1,11 +1,11 @@
-<section class="bg-light">
-  <div class="d-flex border container gap-5 align-items-center">
+<section class="bg-light ">
+  <div class="d-flex border buk gap-1 align-items-center">
     <%= link_to '/categories', class: 'text-light h1' do %>
       <i class="bi bi-arrow-left"></i>
     <% end %>
-    <h2 class="text-light">DETAILS</h2>
+    <h2 class="text-light details">DETAILS</h2>
   </div>
-  <div class="d-flex justify-content-between align-items-center container shadow-sm bg-light ">
+  <div class="d-flex justify-content-between align-items-center buk shadow-sm bg-light ">
     <h5>Total Amount:</h5>
     <h5><%= number_to_currency(@group_expenses.sum(:amount)) %></h5>
   </div>

@@ -1,6 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
 .cat {
   background-color: #60b524;
   padding: 10px;
+  height: 80px;
 }
 
 .icon-div {
@@ -25,7 +33,6 @@
 
 .logo {
   height: 350px;
-  width: 200px;
 }
 
 .logo img {
@@ -34,7 +41,8 @@
   object-fit: contain;
 }
 
-.buc1 {
+.buc1,
+.buk {
   background-color: #336eb2;
 }
 
@@ -46,15 +54,12 @@
   color: #434c55;
 }
 
-.container {
-  background-color: #336eb2;
-}
-
-.cat,
-.container {
-  height: 80px;
-}
-
 .pad-r {
   padding-right: 20px;
+}
+
+.details {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100%;
 }
