@@ -8,6 +8,7 @@
 .cat {
   background-color: #60b524;
   padding: 10px;
+  height: 80px;
 }
 
 .icon-div {
@@ -51,10 +52,6 @@
 
 .tx {
   color: #434c55;
-}
-
-.cat {
-  height: 80px;
 }
 
 .pad-r {
