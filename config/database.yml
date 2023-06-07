@@ -13,7 +13,7 @@ default: &default
 development:
   <<: *default
   database: budget_db 
-  username: admirerbrown
+  username: admirer
  
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,7 +22,7 @@ test:
   <<: *default
   
   database: budget_db_test
-  username: admirerbrown
+  username: admirer
 
 production:
   <<: *default
