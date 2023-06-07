@@ -40,7 +40,8 @@
   object-fit: contain;
 }
 
-.buc1, .buk {
+.buc1,
+.buk {
   background-color: #336eb2;
 }
 
@@ -52,7 +53,7 @@
   color: #434c55;
 }
 
-.cat{
+.cat {
   height: 80px;
 }
 
@@ -60,7 +61,7 @@
   padding-right: 20px;
 }
 
-.details{
+.details {
   display: flex !important;
   justify-content: center !important;
   width: 100%;
