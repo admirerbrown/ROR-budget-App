@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
 .cat {
   background-color: #60b524;
   padding: 10px;
@@ -33,7 +40,7 @@
   object-fit: contain;
 }
 
-.buc1 {
+.buc1, .buk {
   background-color: #336eb2;
 }
 
@@ -50,7 +57,8 @@
 }
 
 .cat,
-.container {
+.container,
+.buk {
   height: 80px;
 }
 
