@@ -52,16 +52,16 @@
   color: #434c55;
 }
 
-.container {
-  background-color: #336eb2;
-}
-
-.cat,
-.container,
-.buk {
+.cat{
   height: 80px;
 }
 
 .pad-r {
   padding-right: 20px;
+}
+
+.details{
+  display: flex !important;
+  justify-content: center !important;
+  width: 100%;
 }
